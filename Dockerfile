@@ -105,7 +105,7 @@ ENV PYTHON_PIP_VERSION 10.0.1
 #         \) -exec rm -rf '{}' +; \
 #     rm -f get-pip.py
 
-RUN python -m pip --upgrade pip \
+RUN python -m pip install --upgrade pip \
     && pip install Django==2.0.5 \
     && pip install mysqlclient
 
