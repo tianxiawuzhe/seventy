@@ -107,7 +107,9 @@ ENV PYTHON_PIP_VERSION 10.0.1
 
 RUN python -m pip install --upgrade pip \
     && pip install Django==2.0.5 \
-    && pip install mysqlclient
+    && pip install mysqlclient \
+    && pip install requests \
+    && pip install rsa 
 
 EXPOSE 1801
 CMD ["python"]
